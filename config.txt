@@ -1,0 +1,26 @@
+1) Criando projeto
+	expo init NomeApp
+
+2) Entrando no projeto
+	cd NomeApp
+
+3) Instalando o ambiente de teste via navegador
+	npm install react-native-web@~0.18.7, react-dom@18.0.0, @expo/webpack-config@^0.17.0
+
+4) Instalar as bibliotecas
+	npm install @react-navigation/native
+	expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+	npm install @react-navigation/drawer
+
+
+5) Configurar o arquivo "babel.config.js" se for usar o drawer.
+	module.exports = function(api) {
+	  api.cache(true);
+	  return {
+		presets: ['babel-preset-expo'],
+		plugins: ['react-native-reanimated/plugin'],
+	  };
+	};
+
+5) Start no ambiente de teste via navegador
+	expo start -w
