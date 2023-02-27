@@ -14,6 +14,9 @@ const estilo = StyleSheet.create({
   },  
   texto: {
     textAlign: "center"
+  },
+  botao:{
+    marginTop: 50
   }
 });
 
